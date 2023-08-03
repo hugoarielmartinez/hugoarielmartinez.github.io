@@ -139,6 +139,30 @@ span .autor {
     text-shadow: #d6d311;
     text-overflow: clip;
     color: azure;
-    margin-top: 25%;
-    
+    margin-top: 25%;    
 }
+@media (max-width: 768px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .calculator {
+      display: flex;
+      flex-direction: column;
+    }
+    .display {
+      width: 100%;
+    }
+    .buttons {
+      width: 100%;
+    }
+    .operator {
+      width: 50%;
+    }
+    .number {
+      width: 50%;
+    }
+    .autor {
+      display: none;
+    }
+  }
