@@ -107,7 +107,7 @@ button:active {
 button.operator {
     color: rgb(252, 253, 252);
     border: 1px solid black;
-    background-image: url(./boca.png );
+    background-image: url(boca.png );
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center right;
