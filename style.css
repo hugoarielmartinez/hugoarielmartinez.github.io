@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e9dd72, #3B7EA7);
+    height: 100%;
+
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: cover;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.calculator {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    background-image: url(./boca.png );
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: right bottom;
+    margin: 0 auto;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #111252af;
+    border-radius: 45px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.display input {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: right;
+    border: none;
+    background-color: #111252af;
+    outline: none;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+}
+
+button {
+    color: rgb(252, 253, 252);
+    box-sizing: border-box;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #111252af;
+    box-shadow: 0px 15px 15px #050505a6;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    /* transition: all 0.2s ease; */
+    transition-duration: 0.6s
+}
+
+button:hover {
+    background-color: #d6d311;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 50%;
+
+}
+
+button:active {
+    transform: scale(0.9);
+    font-size: 24px;
+}
+
+button.operator {
+    color: rgb(252, 253, 252);
+    border: 1px solid black;
+    background-image: url(./boca.png );
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center right;
+    text-align: start;
+
+}
+
+button.operator:hover {
+    background-color: #1247bbfb;
+    font-size: 40px;
+    background-size: 100%;
+}
+
+button.operator:active {
+    transform: none;
+
+}
+
+span .autor {
+    display: flex;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    color: #00bfff;
+}
+.autor{
+    text-shadow: #d6d311;
+    text-overflow: clip;
+    color: azure;
+    margin-top: 25%;
+    
+}

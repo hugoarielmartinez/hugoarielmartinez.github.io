@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora del hincha de boca">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Hugo Ariel Martinez de Viale Entre Rios">
+    <meta name="robots" content="index,follow">
+    <meta name="og:title" content="Calculadora del Hincha de Boca">
+    <meta name="og:image" content="./boca.png">
+    <link rel="icon" href="./mi gato.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora del Hincha de Boca</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="result" value="0" readonly>
+            </div>
+            <div class="buttons">
+                <button class="operator" onclick="clearResult()">C</button>
+                <button class="operator" onclick="backspace()">&larr;</button>
+                <button class="operator" onclick="addToResult('/')">/</button>
+                <button class="operator" onclick="addToResult('*')">x</button>
+                <button onclick="addToResult(7)">7</button>
+                <button onclick="addToResult(8)">8</button>
+                <button onclick="addToResult(9)">9</button>
+                <button class="operator" onclick="addToResult('-')">-</button>
+                <button onclick="addToResult(4)">4</button>
+                <button onclick="addToResult(5)">5</button>
+                <button onclick="addToResult(6)">6</button>
+                <button class="operator" onclick="addToResult('+')">+</button>
+                <button onclick="addToResult(1)">1</button>
+                <button onclick="addToResult(2)">2</button>
+                <button onclick="addToResult(3)">3</button>
+                <button class="operator" onclick="calculate()">=</button>
+                <button onclick="addToResult(0)">0</button>
+                <button onclick="addToResult('.')">.</button>
+                <span class="autor">Creada por Hugo Ariel Martinez</span>
+            </div>
+        </div>
+    </div>
+    <video autoplay muted loop id="bg-video">
+       <!--  <source src="./aurora-borealis-90877.mp4" type="video/mp4">
+        <source src="./aurora-borealis-90877.mp4" type="video/webm"> -->
+        <source src="./boca2.mp4" type="video/mp4">
+        <source src="./boca2.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
